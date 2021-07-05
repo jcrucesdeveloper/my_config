@@ -17,6 +17,7 @@ Plugin 'Yggdroot/indentLine'
 Plugin 'jiangmiao/auto-pairs'
 Plugin 'morhetz/gruvbox'
 Plugin 'matze/vim-move'
+Plugin 'valloric/youcompleteme'
 
 Plugin 'hynek/vim-python-pep8-indent'
 Plugin 'vim-python/python-syntax'
@@ -40,7 +41,7 @@ set smarttab
 set expandtab
 set number
 set relativenumber
-colorscheme gruvbox
+colorscheme SerialExperimentsLain
 set bg=dark
 " Preferencia personal para salir con jj 
 imap jj <Esc>
@@ -58,3 +59,4 @@ set splitright
 set hlsearch
 nnoremap <silent> <Space> :nohlsearch<Bar>:echo<CR>
 set is hls
+nnoremap <BS> <C-^>
