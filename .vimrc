@@ -84,4 +84,6 @@ syntax on
 " NerdTree
 autocmd VimEnter * NERDTree | wincmd p
 set encoding=UTF-8
+" If only buffer quit nerdTree
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 
